@@ -179,7 +179,7 @@ font-family: Arial, Helvetica, sans-serif;
 /* .............home page starts............ */
 
 #homepageBanner {
-    background:url(../images/pexels-pixabay-161276.jpg) no-repeat center top;
+    background:url(../donation-10-/images/pexels-pixabay-161276.jpg) no-repeat center top;
 	background-attachment: fixed;
 	background-size:cover;
 	height:100vh;
@@ -357,7 +357,7 @@ margin-top: 1.5rem;
 
 
    #homepageBanner {
-    background:url(../images/pexels-thirdman-8488997.jpg) no-repeat center top;
+    background:url(../donation-10-/images/pexels-thirdman-8488997.jpg) no-repeat center top;
     background-attachment: fixed;
 	background-size:cover;
 	height:100vh;
