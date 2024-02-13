@@ -20,7 +20,36 @@
 body{
     width: 100vw;
     height: 100vh;
+    background-color: rgb(81, 81, 83);
 }
+
+.Emergency{
+    display: flex;
+    align-items: center;
+    background-color: green;
+    padding: .7rem 6.5rem;
+
+    justify-content: space-between;
+    
+}
+
+.Emergency p{
+ 
+    font-size: .8rem;
+    font-weight: bolder;
+    font-family: "Poppins", sans-serif;
+    color: rgb(242, 244, 246);
+}
+
+.Emergency i{
+    font-size: 1.2rem;
+   
+    
+    color: rgb(242, 244, 246);
+    
+}
+
+
 
 
 nav{
@@ -160,6 +189,23 @@ font-family: Arial, Helvetica, sans-serif;
 }
 
 
+.tittle{
+    font-size: 1.2rem;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 1.3rem;
+    color: white;
+    font-weight: bolder;
+}
+.subtittle{
+    font-size: .8rem;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+   margin-bottom: 1rem;
+    color: white;
+    font-weight: bolder;
+}
+
 
 
 
@@ -206,6 +252,20 @@ main{
 
 }
 
+main h5{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
+     font-family: "Poppins", sans-serif;
+     font-weight: 900;
+     font-style: normal;
+     font-size: 1rem;
+     color: white;
+     padding: .6rem 0;
+}
+
 main p span{
     width: 100%;
    
@@ -240,6 +300,25 @@ margin-top: 1.5rem;
     outline: 0;
 
     border-radius: .5rem;
+}
+
+
+
+
+
+
+
+/* ..............home page ends..... */
+
+/* 
+...........donation........... start....... */
+
+#donation{
+    width: 100%;
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: auto minmax(250px,400px);
+
 }
 
 
@@ -319,21 +398,30 @@ margin-top: 1.5rem;
 
 @media(max-width:1050px){
 
+
+    .Emergency i{
+        font-size: .8rem;
+       
+        
+        color: rgb(242, 244, 246);
+        
+    }
+
     .navlist {
          width: 100%;
         flex-direction: column;
         position: absolute;
-        top: -100px;
+        top: -180px;
         left: 50%;
         right: 50%;
-        background-color: rgb(65, 238, 56);
-       
+        background: rgb(11, 123, 11);
     
         align-items: center;
         justify-content: center;
         text-align: center;
         transform: translate(-50%,50%);
         display: none;
+       padding: 8rem 0;
         
     }
     .navlist.show{
@@ -343,7 +431,7 @@ margin-top: 1.5rem;
 
 
     .navlist li {
-       margin: 1.1rem 0;
+       padding: 1.4rem 0;
        font-weight: bolder;
        font-size: .9rem;
        color: rgb(242, 244, 246);
@@ -393,6 +481,7 @@ main p span{
     
     
 }
+
 
 
 
