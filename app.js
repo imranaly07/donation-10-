@@ -47,7 +47,7 @@ setInterval(() => {
         emergency.style.backgroundColor = "red";
     }
     isRed = !isRed; // Toggle the state
-}, 50);
+}, 100);
 
 
 //close emergency
