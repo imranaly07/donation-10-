@@ -22,6 +22,9 @@ body{
     height: 100vh;
     background-color: rgb(81, 81, 83);
 }
+html{
+    scroll-behavior: smooth;
+  }
 
 .Emergency{
     display: flex;
@@ -212,7 +215,7 @@ font-family: Arial, Helvetica, sans-serif;
 .subtittle::before {
     content: '';
     position: absolute;
-    top: 8%;
+    top: 91%;
     bottom: 0;
     left: 0;
     right: 0;
