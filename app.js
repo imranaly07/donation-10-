@@ -8,17 +8,21 @@ document.addEventListener('DOMContentLoaded',function(){
     menuIcon.addEventListener('click',function () {
 
         if (flag===0) {
-            navlist.classList.add('show')
+            navlist.classList.toggle('show')
            menuIcon.src="images/close.png"
+          
             flag=1;
+
             
         }
 
         else{
-            navlist.classList.remove('show')
+            navlist.classList.remove('show');
+            
             menuIcon.src="images/menu.png"
-           
+            
             flag=0;
+            
         }
 
      
