@@ -99,7 +99,7 @@ const donatedStartValue = 0;
 const donatedEndValue = 3000; // 3 million
 
 // Set the duration of the animation in milliseconds
-const duration = 3000; // 3 seconds
+const duration = 25000; // 3 seconds
 
 // Calculate the increment values based on the duration
 const volunteerIncrement = Math.ceil(volunteerEndValue / (duration / 16));
@@ -146,30 +146,72 @@ const interval = setInterval(() => {
 
 
 
-// ........impact of our work
+// ........impact of our work.......................
 
 
-const swiper = new Swiper('.swiper', {
-    // Optional parameters
-  
-    autoplay:{
-      delay:3000,
-      disableOnInteraction:false,
-    },
-   
-    loop: true,
-  
-    // If we need pagination
-    pagination: {
-      el: '.swiper-pagination',
-      clickable:true,
-    },
-  
-    // Navigation arrows
-    navigation: {
-      nextEl: '.swiper-button-next',
-      prevEl: '.swiper-button-prev',
-    },
-  
-   
-  });
+
+
+
+
+
+
+
+
+
+
+
+
+  const slider = document.querySelector('.slider');
+const slides = document.querySelectorAll('.slide');
+let currentIndex = 0;
+const slideWidth = slides[0].clientWidth;
+
+function goToSlide(index) {
+  if (index < 0) {
+    index = slides.length - 1;
+  } else if (index >= slides.length) {
+    index = 0;
+  }
+
+  slider.style.transform = `translateX(${-index * slideWidth}px)`;
+  currentIndex = index;
+}
+
+function nextSlide() {
+  goToSlide(currentIndex + 1);
+}
+
+setInterval(nextSlide, 2000); // Autoplay interval
+
+goToSlide(0); // Initial position
+
+
+
+
+// ............................//slider ends..........
+// ........................................................................
+// ..........................................................................
+
+
+// ......contactuse............
+const inputs = document.querySelectorAll(".input");
+
+function focusFunc() {
+  let parent = this.parentNode;
+  parent.classList.add("focus");
+}
+
+function blurFunc() {
+  let parent = this.parentNode;
+  if (this.value == "") {
+    parent.classList.remove("focus");
+  }
+}
+
+inputs.forEach((input) => {
+  input.addEventListener("focus", focusFunc);
+  input.addEventListener("blur", blurFunc);
+});
+
+
+
