@@ -31,6 +31,33 @@ document.addEventListener('DOMContentLoaded',function(){
 })
 
 
+// ...........loderStarts..........
+
+
+
+
+const words = ['Save', 'For', 'Ambia', 'Ke', 'Waris'];
+let wordIndex = 0;
+
+function animateText() {
+  const loadingText = document.querySelector('.loading-text');
+  loadingText.textContent = words[wordIndex];
+  wordIndex = (wordIndex + 1) % words.length;
+}
+
+document.addEventListener('DOMContentLoaded', function() {
+  setInterval(animateText, 1000);
+  setTimeout(function() {
+    document.querySelector('.loader-container').style.display = 'none';
+    document.querySelector('#contents').style.display = 'block';
+  },10000); // Change the delay (in milliseconds) as needed
+  document.body.classList.add('loaded');
+});
+
+
+
+
+// .........loderEnds.............
 
 
 
@@ -99,7 +126,7 @@ const donatedStartValue = 0;
 const donatedEndValue = 3000; // 3 million
 
 // Set the duration of the animation in milliseconds
-const duration = 25000; // 3 seconds
+const duration = 1000000; // 3 seconds
 
 // Calculate the increment values based on the duration
 const volunteerIncrement = Math.ceil(volunteerEndValue / (duration / 16));
@@ -160,10 +187,9 @@ const interval = setInterval(() => {
 
 
 
-
-  const slider = document.querySelector('.slider');
+const slider = document.querySelector('.slider');
 const slides = document.querySelectorAll('.slide');
-let currentIndex = 0;
+let currentIndex = localStorage.getItem('currentIndex') || 0;
 const slideWidth = slides[0].clientWidth;
 
 function goToSlide(index) {
@@ -175,6 +201,7 @@ function goToSlide(index) {
 
   slider.style.transform = `translateX(${-index * slideWidth}px)`;
   currentIndex = index;
+  localStorage.setItem('currentIndex', currentIndex);
 }
 
 function nextSlide() {
@@ -183,7 +210,7 @@ function nextSlide() {
 
 setInterval(nextSlide, 2000); // Autoplay interval
 
-goToSlide(0); // Initial position
+goToSlide(currentIndex); // Initial position
 
 
 
