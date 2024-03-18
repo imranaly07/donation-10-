@@ -50,7 +50,7 @@ document.addEventListener('DOMContentLoaded', function() {
   setTimeout(function() {
     document.querySelector('.loader-container').style.display = 'none';
     document.querySelector('#contents').style.display = 'block';
-  },10000); // Change the delay (in milliseconds) as needed
+  },6000); // Change the delay (in milliseconds) as needed
   document.body.classList.add('loaded');
 });
 
