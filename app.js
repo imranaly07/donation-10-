@@ -36,7 +36,7 @@ document.addEventListener('DOMContentLoaded',function(){
 
 
 
-const words = ['Save', 'For', 'Ambia', 'Ke', 'Waris'];
+const words = ['Donation', '10', 'Foundation'];
 let wordIndex = 0;
 
 function animateText() {
@@ -50,7 +50,7 @@ document.addEventListener('DOMContentLoaded', function() {
   setTimeout(function() {
     document.querySelector('.loader-container').style.display = 'none';
     document.querySelector('#contents').style.display = 'block';
-  },6000); // Change the delay (in milliseconds) as needed
+  },10000); // Change the delay (in milliseconds) as needed
   document.body.classList.add('loaded');
 });
 
