@@ -36,7 +36,7 @@ document.addEventListener('DOMContentLoaded',function(){
 
 
 
-const words = ['Donation', '10', 'Foundation'];
+const words = ['𝕨𝕖𝕝𝕔𝕠𝕞𝕖','𝕋𝕠','ｄ𝐎ℕ𝐀𝓣𝔦ØⓃ', '𝟙⊘', '𝕗𝕠𝕦𝕟𝕕𝕒𝕥𝕚𝕠𝕟'];
 let wordIndex = 0;
 
 function animateText() {
@@ -50,7 +50,7 @@ document.addEventListener('DOMContentLoaded', function() {
   setTimeout(function() {
     document.querySelector('.loader-container').style.display = 'none';
     document.querySelector('#contents').style.display = 'block';
-  },10000); // Change the delay (in milliseconds) as needed
+  },6000); // Change the delay (in milliseconds) as needed
   document.body.classList.add('loaded');
 });
 
@@ -239,6 +239,42 @@ inputs.forEach((input) => {
   input.addEventListener("focus", focusFunc);
   input.addEventListener("blur", blurFunc);
 });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
