@@ -18,12 +18,18 @@
             background-color: #333;
             color: white;
             text-align: center;
-            padding: 2rem 0;
+            padding: 2rem 1rem;
             position: relative;
+            display: flex;
+            justify-content: space-around;
+           
+        }
+        header img{
+            width: 120px;
         }
         header h1 {
             margin: 0;
-            font-size: 3rem;
+            font-size: 2rem;
             text-transform: uppercase;
         }
         .container {
@@ -91,6 +97,15 @@
 
         /* Responsive Styles */
         @media (max-width: 768px) {
+            header{
+                flex-direction: column;
+                justify-content: center;
+            }
+            header img{
+                width: 150px;
+                margin: 10px auto;
+
+            }
             header h1 {
                 font-size: 2.5rem;
             }
@@ -104,7 +119,11 @@
     </style>
 </head>
 <body>
+
+
+  
     <header>
+       <a href="index.html"><img src="images/don123-removebg-preview.png" alt=""></a>  
         <h1>Ijtemai Shadi - Helping Underprivileged Muslim Girls</h1>
     </header>
     <div class="container">

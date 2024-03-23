@@ -1,27 +1,23 @@
-
 let menuIcon = document.getElementById('menuIcon');
 let navlist = document.querySelector('.navlist');
 
-let flag = 0;
+let flag = false;
 
 document.addEventListener('DOMContentLoaded', function() {
 
     menuIcon.addEventListener('click', function() {
+        flag = !flag; // Toggle the flag
 
-        if (flag === 0) {
+        if (flag) {
             navlist.classList.add('show');
-            menuIcon.src = "images/close.png";
-            flag = 1;
+            // menuIcon.src = "images/close.png";
         } else {
             navlist.classList.remove('show');
-            menuIcon.src = "images/menu.png";
-            flag = 0;
+            // menuIcon.src = "images/menu.png";
         }
-
     });
 
 });
-
 // ...........loderStarts..........
 
 
@@ -41,7 +37,7 @@ document.addEventListener('DOMContentLoaded', function() {
   setTimeout(function() {
     document.querySelector('.loader-container').style.display = 'none';
     document.querySelector('#contents').style.display = 'block';
-  },6000); // Change the delay (in milliseconds) as needed
+  },11000); // Change the delay (in milliseconds) as needed
   document.body.classList.add('loaded');
 });
 

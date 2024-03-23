@@ -571,6 +571,12 @@ margin-top: 1.5rem;
     background-color: crimson;
   }
 
+  #readMore:hover{
+    background-color: rgb(212, 221, 212);
+    transition: all 2s;
+
+
+  }
 
 
 
@@ -1179,7 +1185,9 @@ textarea.input {
         top: -180px;
         left: 50%;
         right: 50%;
-        background: rgb(11, 123, 11);
+        background: rgb(5, 90, 5);
+        opacity: 0.9;
+        box-shadow: 10px 10px 25px rgb(91, 245, 91);
     
         align-items: center;
         justify-content: center;
@@ -1187,10 +1195,12 @@ textarea.input {
         transform: translate(-50%,50%);
         display: none;
        padding: 8rem 0;
+       transition: all 3s;
         
     }
     .navlist.show{
         display: flex;
+      
     }
    
 
